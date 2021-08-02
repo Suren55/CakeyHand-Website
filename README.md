@@ -40,6 +40,11 @@
 - CSS 3
 - Bootstrap 4
 
+# What you need to know
+- I built this fully functional website by using Javascript for the most part. I acknowledge that there are a bunch of places that could be improved in this project, but unfortunately I never had time to come back and make it more robust and modern. Hoping to do so some time soon and open for suggestions. 
+- The database configurations are for a test database and not the actual one
+- And the Stripe api keys are excluded for security reasons, so the actual payment won't work.
+
 ## Authors
 
 **Suren Margaryan**

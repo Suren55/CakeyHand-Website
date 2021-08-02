@@ -1,0 +1,201 @@
+#main-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+tbody .img-fluid {
+  width: 80px;
+  height: 100px;
+}
+
+.piping-text {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price,
+.quantity {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.other {
+  width: 250px;
+}
+
+.quantity .fa-minus {
+  color: #000000;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.quantity .fa-plus {
+  color: #000000;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.remove-item {
+  cursor: pointer;
+}
+
+.custom-control-label {
+  font-size: 18px;
+}
+
+#pickup-delivery p {
+  margin: 0 0 10px 0;
+}
+
+.warning {
+  font-weight: 500;
+  color: #fd7762;
+}
+
+#coupon-code-exact-warning {
+  color: #fd7762;
+  margin: 0;
+  padding: 0;
+}
+
+#pac-input {
+  width: 250px;
+  height: 40px;
+  margin: 15px 0;
+  padding-left: 10px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+}
+
+#proceed-to-checkout-btn {
+  background-color: #fd7762;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#date {
+  margin-bottom: 25px;
+}
+
+.date-picker-input {
+  padding: 5px;
+  border: 1.5px solid black;
+}
+
+#time {
+  margin-bottom: 25px;
+}
+
+#time select {
+  border: 1.5px solid black;
+}
+
+#phone-number {
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+}
+
+.img-fluid {
+  margin-right: 15px;
+}
+
+.input-group > .form-control {
+  flex: 0.79 1;
+}
+
+#proceed-to-checkout-btn {
+  font-size: 14px;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  bottom: 30px;
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible;
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 30px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #proceed-to-checkout-btn {
+    font-size: 20px;
+  }
+
+  #pac-input,
+  #phone-number {
+    width: 300px;
+  }
+
+  .input-group > .form-control {
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,26 @@
+.no-item{
+    display: none;
+}
+
+.card-deck .card{
+    min-width: 250px;
+    margin: 50px auto;
+} 
+
+.card-deck .card a{
+    color: #000;
+} 
+
+.card-img-top{
+    width: auto;
+}
+
+#footer-jumbotron{
+    background-color: #ffffff;
+}
+
+@media only screen and (min-width: 768px){
+    .card-deck .card{
+        max-width: 250px;
+    } 
+}

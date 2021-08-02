@@ -1,0 +1,35 @@
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h3 class="modal-title text-center" id="reg-title">REGISTRATION</h3>
+      </div>
+      <div id="message-box-reg" class="modal-body">
+        <div id="f-name-form-elem" class="form-group">
+            <label for="f-name">First Name:</label>
+            <input type="text" class="form-control" id="f-name">
+          </div>
+          <div id="l-name-form-elem" class="form-group">
+            <label for="l-name">Last Name:</label>
+            <input type="text" class="form-control" id="l-name">
+          </div>
+          <div id="email-form-elem" class="form-group">
+            <label for="user-reg-email">Email:</label>
+            <input type="email" class="form-control" id="user-reg-email">
+          </div>
+          <div id="password-form-elem" class="form-group">
+            <label for="user-reg-pass">Password:</label>
+            <input type="password" class="form-control" id="user-reg-pass">
+          </div>
+      </div>
+      <div class="modal-footer flex-wrap  justify-content-center">
+            <button type="button" id="signup-btn" class="btn btn-secondary">Register</button>
+            <p id="terms-and-policy" class="footer-para">By continuing you agree to our <a href="../views/terms.html">Terms and Conditions</a> and <a href="../views/policy.html">Privacy Policy</a></p>
+            <p class="footer-para">Already have an account? <button type="button" id="signin-btn-secondary" class="btn btn-link link-like-btn" data-toggle="modal">Sign In</button></p>
+      </div>
+    </div>
+</div>
+
+<script src="../scripts/auth.js"></script>

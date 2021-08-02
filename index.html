@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logos/logo-favicon.ico">
+    <!-- Main Page Style  -->
+    <link rel="stylesheet" href="styles/main_page.css">
+    <!-- Common Style -->
+    <link rel="stylesheet" href="styles/common.css">
+    <!-- Page Title  -->
+    <title>Home Page</title>
+</head>
+<body>
+    <!-- Free Delivery & Signin-Signup  -->
+    <div id="top-header" class="jumbotron jumbotron-fluid">
+    </div>
+
+    <!-- Modal Registration-->
+    <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    </div>
+
+    <!-- Modal Sigin In-->
+    <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    </div>
+    
+    <!-- Navigation  -->
+    <div id="main-nav" class="jumbotron jumbotron-fluid sticky-top">
+    </div>
+
+    <!-- Main Background Image Section -->
+    <div id="main-banner" class="jumbotron jumbotron-fluid bg-banners" style="background-image: url(assets/images/background/combo2.jpg)">
+
+    </div>
+
+    <!-- Banners for product types -->
+    <div id="banners" class="container">
+        <div class="row">
+            <div id="banner1" class="col col-sm-4 banner-item-holder text-center">
+                <img src="assets/images/cakes/cakes-b/originals/whiteV.jpg" alt="cake">
+                <a href="views/bakery.html" class="banner-text-title">Cakes</a>
+            </div>
+            <div id="banner2" class="col col-sm-4 banner-item-holder text-center">
+                <img src="assets/images/desserts/originals/vanillaCupcake.jpg" alt="cupcake">
+                <a href="views/bakery.html" class="banner-text-title">CupCakes</a>
+            </div>
+            <div id="banner3" class="col col-sm-4 banner-item-holder text-center">
+                <img src="assets/images/desserts/originals/raspberryMilleFeuille.jpg" alt="desserts">
+                <a href="bakery.html" class="banner-text-title">Desserts</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Most Populars  -->
+    <div id="most-populars-jumbotron" class="jumbotron jumbotron-fluid">
+        <div id="most-populars-container" class="container">
+            <div class="row justify-content-center">
+                <div id="most-populars-title" class="text-center section-title">Most Populars</div>
+            </div>
+            <div class="card-deck">
+                <div class="card card1">
+                    <a href="views/single.html" class="item-link cakeOreo">
+                        <img class="card-img-top" src="assets/images/cakes/cakes-b/220x250/cakeOreo.jpg" alt="image cap">
+                    </a>
+                    <div class="card-body">
+                        <a href="views/single.html" class="item-link cakeOreo"><h5 class="card-title text-center">Oreo Cake</h5></a>
+                        <p class="card-text text-center cake-price">$110<sup>00</sup> CAD</p>
+                    </div>
+                    <i class="fa fa-heart-o heart-icon cakeOreo"></i>
+                    <button class="btn btn-secondary add-to-cart-btn cakeOreo">Add to cart</button>
+                </div>
+                <div class="card card2">
+                    <a href="views/single.html" class="item-link blue">
+                        <img class="card-img-top" src="assets/images/cakes/cakes-b/220x250/blue.jpg" alt="image cap">
+                    </a>
+                    <div class="card-body">
+                        <a href="views/single.html" class="item-link blue"><h5 class="card-title text-center">Blue</h5></a>
+                        <p class="card-text text-center cake-price">$88<sup>00</sup> CAD</p>
+                    </div>
+                    <i class="fa fa-heart-o heart-icon blue"></i>
+                    <button class="btn btn-secondary add-to-cart-btn blue">Add to cart</button>
+                </div>
+                <div class="card card3">
+                    <a href="views/single.html" class="item-link tiramisu">
+                        <img class="card-img-top" src="assets/images/desserts/220x250/tiramisu.jpg" alt="image cap">
+                    </a>
+                    <div class="card-body">
+                        <a href="views/single.html" class="item-link tiramisu"><h5 class="card-title text-center">Tiramisu</h5></a>
+                        <p class="card-text text-center cake-price">$9<sup>99</sup> CAD</p>
+                    </div>
+                    <i class="fa fa-heart-o heart-icon tiramisu"></i>
+                    <button class="btn btn-secondary add-to-cart-btn tiramisu">Add to cart</button>
+                </div>
+                <div class="card card4">
+                    <a href="views/single.html" class="item-link raspberryMilleFeuille">
+                        <img class="card-img-top" src="assets/images/desserts/220x250/raspberryMilleFeuille.jpg" alt="image cap">
+                    </a>
+                    <div class="card-body">
+                        <a href="views/single.html" class="item-link raspberryMilleFeuille"><h5 class="card-title text-center">Raspberry Mille Feuille</h5></a>
+                        <p class="card-text text-center cake-price">$7<sup>50</sup> CAD</p>
+                    </div>
+                    <i class="fa fa-heart-o heart-icon raspberryMilleFeuille"></i>
+                    <button class="btn btn-secondary add-to-cart-btn raspberryMilleFeuille">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us  -->
+    <div id="about-us-jumbotron" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="about-us-title" class="section-title">About Us</div>
+            </div>
+            <div class="row">
+                <div id="about-us-image" class="col-sm-5 text-center">
+                    <img src="assets/images/aboutUs/aboutus.jpg" alt="My Image">
+                </div>
+                <div id="about-us-text" class="col-sm-7">
+                    <div class="text-center">
+                        <h4>Hi! Welcome to CakeyHand</h4>
+                        <p>We are a couple (Suren & Anna) from Armenia. We established CakeyHand with the goal of providing unique cakes & desserts and exceptional service to our valued customers.</p>
+                    </div>
+                    <div id="about-us-part2">
+                        <strong>Where and How we operate?</strong>
+                        <p>There are 2 ways you can order from us:</p>
+                        <ol>
+                            <li>You can order online through this website and have your order delivered or you can pick it up</li>
+                            <li>You can find us at St. John's Farmers' Market every Saturday 9am - 4pm</li>
+                        </ol>
+                        <p>If you ever have any questions do not hesitate to contact us and we will do our best to accommodate your request.</p>
+                    </div>
+                    <div id="about-us-part3" class="text-center">
+                        <h4>Thank you for your trust.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-jumbotron" class="jumbotron jumbotron-fluid">
+    </div>
+
+    <!-- The core Firebase JS SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+    <!-- Add Firebase Auth and Firestores -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+    <!-- Firebase Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDTTcV3TXZ3sn_F6mA3xCNJNi_oVQsxDGA",
+          authDomain: "testdatabase-dc96e.firebaseapp.com",
+          databaseURL: "https://testdatabase-dc96e.firebaseio.com",
+          projectId: "testdatabase-dc96e",
+          storageBucket: "testdatabase-dc96e.appspot.com",
+          messagingSenderId: "552352108865",
+          appId: "1:552352108865:web:001245b4387a9791c951c0"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/auth.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+</body>
+</html> 

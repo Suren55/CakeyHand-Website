@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Desserts</title>
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../../styles/common.css">
+        <!-- Bakery CSS -->
+        <link rel="stylesheet" type="text/css" href="../../styles/bakery.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../assets/images/logos/logo-favicon.ico">
+    </head>
+    <body>
+        
+        <!-- Top Header Section -->
+        <div id="top-header" class="jumbotron jumbotron-fluid">
+          <!-- content is loaded by jquery from components -->
+         </div>
+        <!-- Modal Registration-->
+        <div class="modal fade" id="registration" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <!-- content is loaded by jquery from components -->
+        </div>
+        <!-- Modal Sigin In-->
+        <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <!-- content is loaded by jquery from components -->
+        </div>
+        <!-- Main Menu Navbar-->
+        <div id="main-nav" class="jumbotron jumbotron-fluid sticky-top">
+          <!-- content is loaded by jquery from components -->
+        </div>
+        
+        <!-- Our Products -->
+        <div id="products-container-wrapper">
+          <div id="products-container" class="container">
+            <div class="alert alert-danger text-center" role="alert">
+                <strong>IMPORTANT:</strong> For custom cakes and/or assortment boxes please contact us
+            </div>
+            <div id="our-products-title" class="text-center section-title">Our Products</div>
+            <div class="row">
+                <div class="product-list mx-auto">
+                    <div class="card-deck">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-jumbotron" class="jumbotron jumbotron-fluid">
+
+        </div>
+        
+        <!-- The core Firebase JS SDK -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+        <!-- Add Firebase Auth and Firestores -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-storage.js"></script>
+
+        <!-- Firebase Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDTTcV3TXZ3sn_F6mA3xCNJNi_oVQsxDGA",
+            authDomain: "testdatabase-dc96e.firebaseapp.com",
+            databaseURL: "https://testdatabase-dc96e.firebaseio.com",
+            projectId: "testdatabase-dc96e",
+            storageBucket: "testdatabase-dc96e.appspot.com",
+            messagingSenderId: "552352108865",
+            appId: "1:552352108865:web:001245b4387a9791c951c0"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../scripts/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script src="../../scripts/bakery.js"></script>
+        <script src="../../scripts/index.js"></script>
+        <script src="../../scripts/auth.js"></script>
+        
+    </body>
+</html>

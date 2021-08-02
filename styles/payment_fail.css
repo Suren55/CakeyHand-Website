@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #787878;
+}
+
+#modal{
+    background-color: #ffffff;
+    padding: 30px 50px;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    border-radius: 10px;
+}
+
+#failure-icon{
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#awesome-text{
+    margin-top: 30px;
+}
+
+#rejected{
+    margin-top: 50px;
+}
+
+#ok-btn{
+    background-color: #F15E5E;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.material-icons{
+    color: #F15E5E;
+    font-size: 85px;
+}

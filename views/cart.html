@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shopping Cart</title>
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/common.css">
+        <!-- Cart CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/cart.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/logos/logo-favicon.ico">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+    </head>
+    <body>        
+
+        <!-- Top Header Section -->
+        <div id="top-header" class="jumbotron jumbotron-fluid">
+            
+        </div>
+        
+        <!-- Main Menu Navbar-->
+        <div id="main-nav" class="jumbotron jumbotron-fluid sticky-top">
+            
+        </div>
+        
+        <div id="main-banner" class="jumbotron jumbotron-fluid bg-banners" style="background-image: url(../assets/images/background/bgPicCart1.jpg)">
+
+        </div>
+        
+        <div class="px-4 px-lg-0">
+            <div class="container text-black py-5 text-center">
+                <h1 class="display-4">Shopping Cart</h1>
+            </div>
+
+          <div class="pb-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 p-5 bg-white rounded shadow-sm">
+
+                  <!-- Shopping cart table -->
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col" class="border-0 bg-light">
+                            <div class="p-2 px-3 text-uppercase">Product</div>
+                          </th>
+                          <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">Price</div>
+                          </th>
+                          <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">Quantity</div>
+                          </th>
+                          <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">Remove</div>
+                          </th>
+                          <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">Size</div>
+                          </th>
+                          <th scope="col" class="border-0 bg-light text-center" >
+                            <div class="py-2 text-uppercase">Add Ons</div>
+                          </th>
+                          <!-- <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">Piping</div>
+                          </th>
+                          <th scope="col" class="border-0 bg-light">
+                            <div class="py-2 text-uppercase">Piping Text</div>
+                          </th> -->
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- End -->
+                </div>
+              </div>
+
+              <div class="row py-5 p-4 bg-white rounded shadow-sm">
+                  <div class="col-lg-6">
+
+                    <!-- Pick Up Or Delivery  -->
+                    <div id="pickup-delivery-section">
+                      <div class="bg-dark text-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Pick up or delivery?</div>
+                      <div class="p-4">
+                        <p class="font-italic mb-4">Would you like a pickup or a delivery? You MUST choose one of them in order to proceed</p>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" class="custom-control-input" id="defaultInline1" name="inlineDefaultRadiosExample" value="pick-up"/>
+                          <label class="custom-control-label" for="defaultInline1">Pick Up</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" class="custom-control-input" id="defaultInline2" name="inlineDefaultRadiosExample" value="delivery"/>
+                          <label class="custom-control-label" for="defaultInline2">Delivery</label>
+                        </div>
+                      </div>
+                      <div id="pickup-delivery" class="px-4 py-3">
+                        <div id="delivery-option-dropdown">
+                          <label for="pac-input" class="delivery-detail-label">Enter delivery address:</label>
+                          <input id="pac-input" type="text" placeholder="Receipient's Address"/>
+                        </div>
+                        <div>
+                          <!-- Date & Time  -->
+                          <div>
+                            <div id="date" class="">
+                              <label for="" class="delivery-detail-label">Select Date:</label>
+                              <input id="date-input" class="date-picker-input" type="text" placeholder="MM/DD/YYYY">
+                            </div>
+                            <div id="time">
+                              <label for="" class="delivery-detail-label">Select Time Range: </label>
+                              <select value="select-time" id="time-select">
+                                <option value="12pm-3pm">12pm-3pm</option>
+                                <option value="3pm-5pm">3pm-5pm</option>
+                                <option value="5pm-7pm">5pm-7pm</option>
+                              </select>
+                            </div>
+                          </div>
+                          <!-- Phone Number  -->
+                          <div id="phone-number-block">
+                            <label for="phone-number" class="delivery-detail-label">Enter Phone Number: </label>
+                            <input type="tel" name="" id="phone-number" placeholder="Your Phone Number">
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Coupon Code  -->
+                    <div id="coupon-code-section">
+                      <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Coupon code</div>
+                        <div class="p-4">
+                          <p class="font-italic mb-4">If you have a coupon code, please enter it in the box below</p>
+                          <div class="input-group border rounded-pill p-2">
+                            <input id="coupon-code" type="text" placeholder="Code" aria-describedby="button-addon3" class="form-control border-0">
+                            <div class="input-group-append border-0">
+                              <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill"><i class="fa fa-gift mr-2"></i>Apply coupon</button>
+                            </div>
+                          </div>
+                          <div id="coupon-code-warnings-section">
+                            <p id="coupon-code-exact-warning"></p>
+                          </div>
+                      </div>
+                    </div>
+
+                    <!-- Notes For Seller  -->
+                    <div id="notes-for-seller-section">
+                      <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Additional Notes</div>
+                      <div class="p-4">
+                        <p class="font-italic mb-4">If there is anything else we must know about, please tpye them in the box below</p>
+                        <textarea id="notes" cols="30" rows="2" class="form-control" placeholder="Anything we should know about?"></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Order Summary -->
+                  <div class="col-lg-6">
+                    <div id="order-summary-section">
+                      <div class="bg-dark text-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Order summary </div>
+                      <div class="p-4">
+                        <p class="font-italic mb-4">Shipping and additional costs are calculated based on values you have entered.</p>
+                        <ul class="list-unstyled mb-4">
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Order Subtotal </strong><strong><span id="subtotal-amount"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Piping</strong><strong><span id="piping-cost"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Standard Candle</strong><strong><span id="standard-candle-cost"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Number Candle</strong><strong><span id="number-candle-cost"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Wish Card</strong><strong><span id="wish-card-cost"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Delivery</strong><strong><span id="delivery-cost"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">GST/HST</strong><strong><span id="tax"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Coupon Applied</strong><strong><span id="coupon"></span></strong></li>
+                          <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Total</strong>
+                            <h5 id="total-amount" class="font-weight-bold" name="Total"></h5>
+                          </li>
+                        </ul>
+                        <input id="proceed-to-checkout-btn" class="btn rounded-pill py-2 btn-block text-uppercase font-weight-bold" value="Proceed to checkout" type="Submit">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <!-- Error Message PopUp From Top -->
+        <div id="snackbar"></div>
+        
+        <div id="footer-jumbotron" class="jumbotron jumbotron-fluid">
+           
+        </div>
+
+        <!-- The core Firebase JS SDK -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+        <!-- Add Firebase Auth and Firestores -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+        <!-- Firebase Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDTTcV3TXZ3sn_F6mA3xCNJNi_oVQsxDGA",
+            authDomain: "testdatabase-dc96e.firebaseapp.com",
+            databaseURL: "https://testdatabase-dc96e.firebaseio.com",
+            projectId: "testdatabase-dc96e",
+            storageBucket: "testdatabase-dc96e.appspot.com",
+            messagingSenderId: "552352108865",
+            appId: "1:552352108865:web:001245b4387a9791c951c0"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+           <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../../scripts/cart.js"></script>
+        <script src="../../scripts/index.js"></script>
+        <script src="../../scripts/auth.js"></script>
+
+        <script src="https://js.stripe.com/v3/"></script> 
+    </body>
+</html>
+

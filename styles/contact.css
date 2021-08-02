@@ -1,0 +1,40 @@
+#menu-contact a{
+    color: #FD7762;
+    font-weight: bold;
+}
+
+#menu-contact a{
+    color: #FD7762;
+}
+
+#alert-area{
+    display: inline-block;
+}
+
+#contact-form .row{
+    margin-bottom: 20px;
+}
+
+#contacts ul li{
+    margin-bottom: 50px;
+}
+
+#contacts ul li .fa{
+    font-size: 35px;
+}
+
+#send-btn{
+    background-color: #FD7762;
+    width: 150px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#send-btn:hover{
+    opacity: 0.8;
+}

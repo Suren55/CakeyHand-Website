@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Settings</title>
+        
+        <!-- Required meta tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8">
+        
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/common.css">
+        <!-- General Settings CSS -->
+        <link rel="stylesheet" type="text/css" href="../styles/general_settings.css">
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="../assets/images/logos/logo-favicon.ico">
+    </head>
+
+    <body>
+        
+        <!-- Top Header Section -->
+        <div id="top-header" class="jumbotron jumbotron-fluid">
+            
+        </div>
+        
+        <!-- Main Menu Navbar-->
+        <div id="main-nav" class="jumbotron jumbotron-fluid sticky-top">
+ 
+        </div>
+        
+        <!-- Information Review  -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center mb-3">
+                        <h1>General Settings</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center mb-3">
+                        <p class="lead text-center">Review the information you provided us so far.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>To make changes simply change the values of the boxes you want to edit and hit <strong>save changes</strong> button below.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="alert alert-success alert-dismissible fade show">
+                        <button type="button" class="close">&times;</button>
+                        <strong>Success!</strong> Changes have been saved.
+                    </div>                
+                </div>
+                <div class="row mb-5">
+                    <div class="col col-sm-4 text-center mb-5">
+                        <div class="wrapper px-3 py-2">
+                            <p class="subtitle">Review your personal info</p>
+                            <div class="mb-3">
+                                <label class="info">First Name</label><br>
+                                <input id="f-name" type="text"><br>
+                            </div>
+                            <div class="mb-3">
+                                <label class="info">Last Name</label><br>
+                                <input id="l-name" type="text"><br>
+                            </div>
+                            <div class="mb-3">
+                                <label class="info">Sex</label><br>
+                                <input id="radio-male" type="radio" name="gender" value="male"> Male<br>
+                                <input id="radio-female" type="radio" name="gender" value="female"> Female<br>
+                            </div>
+                            <div class="mb-2">
+                                <label class="info">Age</label><br>
+                                <input id="age" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col col-sm-4 text-center mb-5">
+                        <div class="wrapper px-3 py-2">
+                            <p class="subtitle ">Review your address</p>
+                            <div class="mb-3">
+                                <label class="info">Country</label><br>
+                                <input id="country" type="text">
+                            </div>
+                            <div class="mb-3">
+                                <label class="info">State (if applicable)</label><br>
+                                <input id="state" type="text">
+                            </div>
+                            <div class="mb-3">
+                                <label class="info">City</label><br>
+                                <input id="city" type="text">
+                            </div>
+                            <div class="mb-3">
+                                <label class="info">Street</label><br>
+                                <input id="street" type="text">
+                            </div>
+                            <div class="mb-2">
+                                <label class="info">Postal Code</label><br>
+                                <input id="postal-code" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col col-sm-4 text-center" >
+                        <div class="wrapper px-3 py-2">
+                            <p class="subtitle">Review your login info</p>
+                            <div class="mb-3">
+                                <label class="info">Email Address</label><br>
+                                <input id="email" type="text" name="email" disabled='true'><br>
+                            </div>
+                            <div class="mb-3">
+                                <label class="info">Mobile Phone Number</label><br>
+                                <input id="phone-number" type="text"><br>
+                            </div>
+                            <div class="col text-center">
+                                <button id="delete-btn" class="btn btn-danger">Delete Account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <button class="btn btn-secondary save-changes-btn">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="id01" class="modal">
+            <span class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container1">
+                <h1>Are you sure you want to delete your account?</h1>
+                <p>If you choose to delete, you will permanently lose all your records</p>
+                <p>Please note that the process will take up to 24 hours</p>
+                
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="button" class="deletebtn">Delete</button>
+                </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="footer-jumbotron" class="jumbotron jumbotron-fluid">
+           
+        </div>
+
+        <!-- The core Firebase JS SDK -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+
+        <!-- Add Firebase Auth and Firestores -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+        <!-- Firebase Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyDTTcV3TXZ3sn_F6mA3xCNJNi_oVQsxDGA",
+              authDomain: "testdatabase-dc96e.firebaseapp.com",
+              databaseURL: "https://testdatabase-dc96e.firebaseio.com",
+              projectId: "testdatabase-dc96e",
+              storageBucket: "testdatabase-dc96e.appspot.com",
+              messagingSenderId: "552352108865",
+              appId: "1:552352108865:web:001245b4387a9791c951c0"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+          </script>
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../../scripts/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        <script src="../../scripts/index.js"></script>
+        <script src="../../scripts/auth.js"></script>
+        <script src="../../scripts/general_settings.js"></script>
+    </body>
+</html>

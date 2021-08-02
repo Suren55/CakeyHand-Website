@@ -1,0 +1,287 @@
+/* General Settings */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.btn-secondary{
+    background-color: #FD7762;
+    border: 1px solid #FD7762;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-secondary:hover{
+    background-color: #FD7762;
+    opacity: 0.8;
+    border: 1px solid #FD7762;
+}
+
+.btn .btn-secondary:active{
+    background-color: #FD7762 !important;
+    border: 1px solid black;
+}
+
+.jumbotron{
+    margin-bottom: 0;
+}
+
+.fa {
+    margin-right: 5px;
+    color: #FD7762;
+}
+
+.sign-in-btn, .register-btn{
+    color: #FFFFFF;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar-bottom {
+    visibility: hidden; 
+    min-width: 250px; 
+    margin-left: -125px; 
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px; 
+    position: fixed; 
+    z-index: 1; 
+    left: 50%; 
+    bottom: 30px; 
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar-bottom.show {
+    visibility: visible; 
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+/* Top Header */
+#welcome-user, #my-account-dropdown{
+    display: none;
+    z-index: 2000;
+}
+
+#top-header{
+    /* margin: 78px 0 0 0; */
+    padding: 20px 0 5px 0;
+    background-color: #000000;
+} 
+
+#free-shipping{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+} 
+
+#free-shipping h6{
+    font-size: 13px;
+}
+
+.fa-check-circle{
+    color: green;
+}
+
+.fa-clock-o{
+    color: #FFA300;
+}
+
+.fa-angle-down{
+    font-size: 19px;
+}
+
+.jumbotron ul.list-unstyled li.list-inline-item .top-nav-elem {
+    color: white;
+    cursor: pointer;
+}
+
+#modal-footer-new-member{
+    border-top: none;
+}
+
+.modal .modal-content .modal-footer .footer-para .btn-link{
+    font-size: 14px;
+    padding: 0 0 5px 5px;
+}
+
+.correct-input{
+    font-size: 11px;
+    color: green;
+}
+
+#pending-email{
+    color: #FFA300;
+    font-size: 11px;
+}
+
+.wrong-input{
+    font-size: 11px;
+    color: #FD7762;
+}
+
+#terms-and-policy{
+    margin-top: 20px;
+}
+
+/* Main Menu Navbar */
+#main-nav{
+    padding: 5px 0 5px 0;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+.hand{
+    color: #FD7762;
+}
+
+.main-nav-elem{
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+}
+
+.main-nav-elem:hover{
+    text-decoration: none;
+    color: #FD7762;
+}
+
+.navbar-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.navbar-nav .nav-link{
+    text-transform: capitalize;
+    font-size: 20px;
+    /* font-weight: 500; */
+    margin-left: 20px;
+}
+
+#shopping-cart-nav-item{
+    display: none;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#navbarNav .fa-shopping-cart{
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    padding: 11px 12px;
+    font-size: 20px;
+    color: #000000;
+    
+}
+
+#shopping-cart-items-number{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 27px;
+    right: -7px;
+    background-color: #FD7762;
+    padding: 3px 9px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+/* Footer Section */
+.footer-column-wrapper{
+    margin-bottom: 60px;
+}
+
+.col-title{
+    margin-bottom: 30px;
+}
+
+.footer-span{
+    margin-bottom: 15px;
+}
+
+.footer-span:hover a{
+    color: #FD7762;
+    
+}
+
+.footer-span a{
+    color: #333;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#social-media-icons{
+    margin-bottom: 30px;
+}
+
+.hours{
+    margin-bottom: 10px;
+}
+
+.icon{
+    margin-right: 25px;
+    font-size: 24px;
+}
+
+.icon:nth-child(2){
+    margin-right: 0px;
+}
+
+.fa-copyright {
+    color: #000000;
+}
+
+.find-us-elem{
+    margin-bottom: 15px;
+}
+
+#copyright span{
+    color: #FD7762;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px){
+    #free-shipping h6{
+        font-size: 14px;
+    }
+
+    #shopping-cart-nav-item{
+        margin-top: 0px;
+    }
+
+    .footer-column-wrapper{
+        margin-bottom: 0px;
+    }
+}

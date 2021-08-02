@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #787878;
+}
+
+#modal{
+    background-color: #ffffff;
+    padding: 30px 50px;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    border-radius: 10px;
+}
+
+#success-checkmark-icon{
+    background-color: #82CE34;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    padding: 45px;
+    top: -85px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+}
+
+#awesome-text{
+    margin-top: 30px;
+}
+
+#confirm{
+    margin-top: 50px;
+}
+
+#ok-btn{
+    background-color: #82CE34;
+    border: none;
+    padding: 10px 100px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.fa-check{
+    color: #ffffff;
+    font-size: 45px;
+}

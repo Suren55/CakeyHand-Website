@@ -4,7 +4,15 @@
 
 ## Screenshots
 
-![Home Page](/screenshots/HomePage.png)
+![Home Page](/screenshots/home.png)
+
+![Prodcuts Page](/screenshots/products.png)
+
+![Shopping Cart Page](/screenshots/cart.png)
+
+![Checkout Page](/screenshots/checkout.png)
+
+![Signup Page](/screenshots/signup.png)
 
 ## How to run
 
